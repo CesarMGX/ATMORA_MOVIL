@@ -1,0 +1,46 @@
+/* Barra de Navegación Inferior (Bottom Bar) */
+.custom-bottom-bar {
+    --background: #1a3a5a !important;
+    --border: none !important;
+    height: auto !important;
+    min-height: calc(65px + max(var(--ion-safe-area-bottom, 0px), env(safe-area-inset-bottom, 0px))) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2) !important;
+    padding-top: 6px !important;
+    padding-bottom: max(calc(var(--ion-safe-area-bottom, 0px) + 8px), calc(env(safe-area-inset-bottom, 0px) + 8px), 12px) !important;
+}
+
+.custom-bottom-bar ion-tab-button {
+    --background: transparent !important;
+    --color: #8fa0b5 !important;
+    --color-selected: #ff732e !important;
+    font-family: 'Montserrat', sans-serif !important;
+    transition: all 0.25s ease-in-out;
+    padding-bottom: 4px !important;
+}
+
+.custom-bottom-bar ion-tab-button ion-icon {
+    font-size: 24px !important;
+    margin-bottom: 2px !important;
+}
+
+.custom-bottom-bar ion-tab-button ion-label {
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+}
+
+/* Estilos personalizados para SweetAlert2 en ATMORA-APP */
+.atmora-swal-popup {
+    border-radius: 20px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 20px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25) !important;
+}
+
+.atmora-swal-btn {
+    border-radius: 10px !important;
+    padding: 10px 24px !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+}

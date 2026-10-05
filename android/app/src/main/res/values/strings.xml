@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ATMORA-APP</string>
+    <string name="title_activity_main">ATMORA-APP</string>
+    <string name="package_name">io.ionic.starter</string>
+    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="server_client_id">260943439033-s02n43med5qq3mkdb8bdje110q39kt97.apps.googleusercontent.com</string>
+</resources>

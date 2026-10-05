@@ -1,0 +1,111 @@
+.locations-container {
+    --background: #1a3a5a !important;
+}
+
+.locations-header-bg {
+    height: auto;
+    min-height: 65px;
+    padding-top: max(var(--ion-safe-area-top, 0px), env(safe-area-inset-top, 25px));
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background: #1a3a5a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.back-btn {
+    --color: white;
+    font-size: 25px;
+}
+
+.locations-white-card {
+    background: white;
+    min-height: 90vh;
+    border-radius: 60px 0 0 0;
+    padding: 35px 30px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.locations-main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #555;
+    /* Azul claro del mockup */
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.city-section {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.city-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.location-item {
+    background: #ff732e;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 18px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 115, 46, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.location-item:active {
+    transform: scale(0.98);
+}
+
+.location-item-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.location-item-coords {
+    font-size: 0.78rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.loading-box, .error-box, .empty-box {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.retry-btn {
+    background: #1a3a5a;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}

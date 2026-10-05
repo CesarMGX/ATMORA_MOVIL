@@ -1,0 +1,195 @@
+/* --- MODAL REDISEÑADO DE GUÍA DE CALIDAD --- */
+.custom-quality-modal {
+    --height: 85%;
+    --border-radius: 35px 35px 0 0;
+    --backdrop-opacity: 0.55;
+}
+
+.modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #f4f7f9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Encabezado del Modal con azul marino elegante */
+.modal-header-color {
+    background: linear-gradient(135deg, #1a3a5a 0%, #0f2b48 100%);
+    padding: 35px 20px 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 8px 20px rgba(15, 43, 72, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-icon-badge {
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-icon {
+    font-size: 3.4rem;
+    color: #ffffff;
+}
+
+.modal-header-title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.modal-header-subtitle {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    --color: rgba(255, 255, 255, 0.9);
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.modal-body-bg {
+    --background: #f4f7f9;
+}
+
+.modal-body-padding {
+    padding: 20px 14px 30px;
+}
+
+/* --- TARJETAS CON SOMBRA Y BORDES SUAVES --- */
+.info-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 22px 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(26, 58, 90, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.primary-card {
+    border-left: 5px solid #ff732e;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1a3a5a;
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+
+.card-title-icon-box {
+    background: rgba(255, 115, 46, 0.12);
+    color: #ff732e;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.palette-box {
+    background: rgba(26, 58, 90, 0.1);
+    color: #1a3a5a;
+}
+
+.card-description {
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.93rem;
+    font-weight: 400;
+}
+
+/* --- FILAS DE COLORES DE CALIDAD DEL AIRE --- */
+.color-guide-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color-status-row {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 16px;
+    transition: transform 0.15s ease;
+}
+
+.color-status-row:hover {
+    transform: translateX(3px);
+}
+
+.status-dot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+}
+
+.status-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.9), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.status-text-content {
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: #2d3748;
+}
+
+.status-level-badge {
+    font-weight: 800;
+    font-size: 0.95rem;
+}
+
+.status-desc-text {
+    font-weight: 500;
+    color: #4a5568;
+}
+
+/* Pie de página con sello NOM */
+.norma-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    color: #718096;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.norma-icon {
+    font-size: 1.1rem;
+    color: #2b6cb0;
+}

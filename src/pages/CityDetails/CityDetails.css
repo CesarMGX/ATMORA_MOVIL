@@ -1,0 +1,336 @@
+/* --- CONTENEDOR PRINCIPAL --- */
+.city-container {
+    --background: #1a3a5a !important;
+    /* El azul marino oscuro que elegiste */
+}
+
+.city-header-bg {
+    height: auto;
+    min-height: 65px;
+    padding-top: max(var(--ion-safe-area-top, 0px), env(safe-area-inset-top, 25px));
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background: #1a3a5a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.menu-btn-white {
+    --color: white;
+    /* Asegura que el icono del menú sea blanco */
+}
+
+/* --- TARJETA BLANCA (Cuerpo de la pantalla) --- */
+.city-white-card {
+    background: white;
+    min-height: 90vh;
+    border-radius: 60px 0 0 0;
+    padding: 35px 15px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* --- MAPA --- */
+.map-box {
+    width: 92%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 35px;
+}
+
+.map-img {
+    width: 100%;
+    display: block;
+}
+
+/* --- BOTÓN NARANJA SEPARADO DEL MAPA --- */
+.details-btn {
+    --background: #ff8c00;
+    --color: white;
+    --border-radius: 15px;
+    --box-shadow: 0 6px 15px rgba(255, 140, 0, 0.3);
+    width: 220px;
+    font-weight: bold;
+    text-transform: none;
+    height: 50px;
+    margin-top: 30px !important;
+    margin-bottom: 25px !important;
+}
+
+/* --- INFORMACIÓN ADICIONAL DE UBICACIÓN --- */
+.city-subtitle-desc {
+    text-align: center;
+    color: #666;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.location-extra-info {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+
+.extra-info-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.extra-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.status-indicator-dot.online {
+    width: 10px;
+    height: 10px;
+    background-color: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.extra-card-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #1a3a5a;
+    flex: 1;
+}
+
+.status-badge-online {
+    background: rgba(16, 185, 129, 0.12);
+    color: #059669;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.sensor-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.stat-chip {
+    background: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 14px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chip-icon {
+    font-size: 1.3rem;
+    color: #ff732e;
+}
+
+.chip-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.chip-label {
+    font-size: 0.7rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+.chip-val {
+    font-size: 0.82rem;
+    color: #1a202c;
+    font-weight: 700;
+}
+
+.recommendation-card {
+    border-left: 4px solid #10b981;
+    background: #f0fdf4;
+}
+
+.recommendation-header {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.recommendation-icon {
+    font-size: 1.8rem;
+    color: #059669;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.recommendation-title {
+    display: block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #065f46;
+    margin-bottom: 4px;
+}
+
+.recommendation-text {
+    font-size: 0.8rem;
+    color: #047857;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- ESTILOS DEL MODAL (GUÍA DE CALIDAD) --- */
+.custom-modal {
+    --height: 85%;
+    --border-radius: 35px 35px 0 0;
+}
+
+.modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #f4f7f9;
+    /* Fondo gris claro detrás de las cards */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Encabezado del Modal con Icono Blanco */
+.modal-header-color {
+    background: #1a3a5a;
+    /* Azul marino sólido */
+    padding: 40px 20px 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    border-radius: 0 0 25px 25px;
+    /* Redondeado inferior */
+}
+
+.header-icon {
+    font-size: 5rem;
+    /* Icono grande como en tu imagen */
+    color: white;
+    margin-bottom: 10px;
+}
+
+.modal-header-color h2 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    --color: white;
+    font-size: 1.8rem;
+}
+
+/* --- TARJETAS DENTRO DEL MODAL --- */
+.info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #1a3a5a;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-title ion-icon {
+    font-size: 1.5rem;
+}
+
+.info-card p {
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- LISTA DE COLORES --- */
+.color-guide-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guide-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.guide-item p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Los círculos de colores */
+.tiny-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.green {
+    background: #00e676;
+}
+
+.yellow {
+    background: #ffea00;
+}
+
+.orange {
+    background: #ff9100;
+}
+
+.red {
+    background: #ff1744;
+}
+
+.purple {
+    background: #d500f9;
+}
+
+.norma-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    margin: 20px 0;
+    font-style: italic;
+}

@@ -1,0 +1,97 @@
+.history-container {
+    --background: #1a3a5a !important;
+    /* Azul oscuro del header */
+}
+
+.history-header-bg {
+    height: auto;
+    min-height: 65px;
+    padding-top: max(var(--ion-safe-area-top, 0px), env(safe-area-inset-top, 25px));
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background: #1a3a5a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.back-btn {
+    --color: white;
+    font-size: 25px;
+}
+
+.history-white-card {
+    background: white;
+    min-height: 90vh;
+    border-radius: 60px 0 0 0;
+    padding: 35px 25px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #666;
+    /* Gris como en la imagen */
+    margin-bottom: 40px;
+}
+
+.history-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.alert-btn {
+    --background: #ff8c00;
+    /* Naranja de las alertas */
+    --color: white;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
+    height: 55px;
+    font-weight: bold;
+    text-transform: none;
+    font-size: 1.1rem;
+}
+
+.alert-btn ion-icon {
+    font-size: 1.5rem;
+}
+
+/* Sección de Ayuda Inferior */
+.help-section {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.help-text {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.help-text p {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #666;
+    line-height: 1.2;
+}
+
+.help-icon {
+    font-size: 3.5rem;
+    color: #1a3a5a;
+}

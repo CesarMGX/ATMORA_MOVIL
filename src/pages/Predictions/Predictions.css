@@ -1,0 +1,261 @@
+/* --- ESTILOS DE PREDICCIONES CON IA (ATMORA) --- */
+.prediction-container {
+    --background: #1a3a5a !important;
+}
+
+.prediction-header-bg {
+    height: auto;
+    min-height: 65px;
+    padding-top: max(var(--ion-safe-area-top, 0px), env(safe-area-inset-top, 25px));
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background: #1a3a5a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.prediction-white-card {
+    background: white;
+    min-height: 90vh;
+    border-radius: 60px 0 0 0;
+    padding: 35px 20px 60px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prediction-main-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #1a3a5a;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.prediction-subtitle {
+    font-size: 0.9rem;
+    color: #718096;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* --- MENÚ DE SELECCIÓN DE VARIABLES --- */
+.variable-selection-list {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.variable-select-btn {
+    --background: #ff732e !important;
+    --color: #ffffff !important;
+    --border-radius: 18px !important;
+    --box-shadow: 0 6px 16px rgba(255, 115, 46, 0.28);
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: none;
+    transition: transform 0.2s ease;
+}
+
+.variable-select-btn:active {
+    transform: scale(0.97);
+}
+
+.variable-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* --- PANTALLA DE CONFIGURACIÓN --- */
+.config-group {
+    width: 100%;
+    max-width: 340px;
+    margin-bottom: 22px;
+}
+
+.config-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1a3a5a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.custom-select-box {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 6px 12px;
+    font-weight: 600;
+    color: #1a3a5a;
+}
+
+.datetime-container {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-datetime {
+    --background: transparent;
+    --color: #1a3a5a;
+    border-radius: 16px;
+}
+
+.generate-btn {
+    --background: #1a3a5a !important;
+    --color: #ffffff !important;
+    --border-radius: 18px !important;
+    --box-shadow: 0 6px 18px rgba(26, 58, 90, 0.3);
+    width: 100%;
+    max-width: 340px;
+    height: 55px;
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-transform: none;
+    margin-top: 15px;
+}
+
+/* --- PANTALLA DE RESULTADOS --- */
+.result-card-large {
+    width: 100%;
+    max-width: 360px;
+    background: linear-gradient(135deg, #1a3a5a 0%, #0f2b48 100%);
+    border: 2px solid #ff732e;
+    border-radius: 24px;
+    padding: 24px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(255, 115, 46, 0.2);
+    margin-bottom: 25px;
+}
+
+.result-badge {
+    display: inline-block;
+    background: rgba(255, 115, 46, 0.2);
+    color: #ff732e;
+    border: 1px solid rgba(255, 115, 46, 0.4);
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.predicted-value-display {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 8px 0;
+    line-height: 1;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.predicted-sub-info {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+}
+
+.chart-placeholder-container {
+    width: 100%;
+    max-width: 360px;
+    height: 300px;
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.new-prediction-btn {
+    --background: #ff732e !important;
+    --color: #ffffff !important;
+    --border-radius: 18px !important;
+    --box-shadow: 0 6px 18px rgba(255, 115, 46, 0.3);
+    width: 100%;
+    max-width: 340px;
+    height: 52px;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: none;
+}
+
+/* --- SECCIÓN INFERIOR DE AYUDA Y ANIMACIÓN DE REBOTE --- */
+.prediction-help-corner {
+    margin-top: auto;
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 35px;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+
+.prediction-help-corner:active {
+    transform: scale(0.96);
+}
+
+.prediction-help-text {
+    text-align: right;
+    margin-right: 12px;
+}
+
+.prediction-help-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #64748b;
+    line-height: 1.25;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prediction-help-bouncing-icon {
+    font-size: 3.6rem;
+    color: #1a3a5a;
+    display: block;
+    animation: bounce 1.8s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-14px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}

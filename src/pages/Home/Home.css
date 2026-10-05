@@ -1,0 +1,282 @@
+.home-container {
+    --background: #1a3a5a !important;
+}
+
+.home-header-bg {
+    height: auto;
+    min-height: 60px;
+    padding-top: max(var(--ion-safe-area-top, 0px), env(safe-area-inset-top, 25px));
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background: #1a3a5a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.home-white-card {
+    background: white;
+    min-height: 90vh;
+    border-radius: 60px 0 0 0;
+    padding: 35px 20px 50px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-logo {
+    width: 170px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    text-align: center;
+    width: 100%;
+    max-width: 360px;
+}
+
+.welcome-text h1 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #1a3a5a;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.welcome-sub {
+    color: #718096;
+    font-size: 0.92rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.offer-card-main {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.offer-title {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #1a3a5a;
+    margin-bottom: 8px;
+}
+
+.offer-desc {
+    color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* --- TARJETA PROMOCIONAL DE IA Y PREDICCIONES --- */
+.ai-promo-card {
+    background: linear-gradient(135deg, #1a3a5a 0%, #0f2b48 100%);
+    border: 2px solid #ff732e;
+    border-radius: 24px;
+    padding: 24px 20px;
+    color: white;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(255, 115, 46, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 115, 46, 0.2);
+    color: #ff732e;
+    border: 1px solid rgba(255, 115, 46, 0.4);
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.ai-header-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.ai-icon-large {
+    font-size: 2.2rem;
+    color: #ff732e;
+}
+
+.ai-title {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.25;
+}
+
+.ai-desc {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.ai-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.ai-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.ai-feature-icon {
+    color: #ff732e;
+    font-size: 1rem;
+}
+
+.ai-cta-btn {
+    --background: #ff732e !important;
+    --color: #ffffff !important;
+    --border-radius: 14px !important;
+    font-weight: 800;
+    font-size: 0.9rem;
+    height: 44px;
+    text-transform: none;
+    margin: 0;
+}
+
+/* --- CUADRÍCULA DE SERVICIOS Y CARACTERÍSTICAS --- */
+.section-heading {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #1a3a5a;
+    width: 100%;
+    max-width: 360px;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.services-grid {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 18px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease;
+}
+
+.service-card:active {
+    transform: scale(0.98);
+}
+
+.service-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.service-icon-box.orange {
+    background: rgba(255, 115, 46, 0.12);
+    color: #ff732e;
+}
+
+.service-icon-box.blue {
+    background: rgba(26, 58, 90, 0.12);
+    color: #1a3a5a;
+}
+
+.service-icon-box.green {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+}
+
+.service-content h3 {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #2d3748;
+    margin: 0 0 4px 0;
+}
+
+.service-content p {
+    font-size: 0.82rem;
+    color: #718096;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- BOTONES DE ACCIÓN RÁPIDA --- */
+.quick-actions-box {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    gap: 12px;
+}
+
+.action-primary-btn {
+    --background: #1a3a5a !important;
+    --color: #ffffff !important;
+    --border-radius: 14px !important;
+    flex: 1;
+    height: 48px;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 0.88rem;
+}
+
+.action-secondary-btn {
+    --color: #1a3a5a !important;
+    --border-color: #1a3a5a !important;
+    --border-radius: 14px !important;
+    flex: 1;
+    height: 48px;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 0.88rem;
+}

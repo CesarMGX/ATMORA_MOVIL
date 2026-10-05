@@ -1,0 +1,7 @@
+{
+  "name": "ATMORA-APP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
